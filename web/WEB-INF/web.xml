@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+     <servlet-name>ULoginChecker</servlet-name>
+    <servlet-class>controller.ULoginChecker</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ULoginChecker</servlet-name>
+    <url-pattern>/ULoginChecker</url-pattern>
+  </servlet-mapping>
+    
+    
+    
+     <servlet-name>URegisterChecker</servlet-name>
+    <servlet-class>controller.URegisterChecker</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>URegisterChecker</servlet-name>
+    <url-pattern>/URegisterChecker</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet-name>WLoginChecker</servlet-name>
+    <servlet-class>controller.WLoginChecker</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>WLoginChecker</servlet-name>
+    <url-pattern>/WLoginChecker</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+   <servlet-name>WRegistorChecker</servlet-name>
+    <servlet-class>controller.WRegistorChecker</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>WRegistorChecker</servlet-name>
+    <url-pattern>/WRegistorChecker</url-pattern>
+  </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
